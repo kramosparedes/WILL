@@ -11,11 +11,16 @@ function numeroSimetrico(num) {
   // Un número es simétrico cuando es igual a su reverso.
   // Ej:
   // numeroSimetrico(11711) devuelve true
-
   // Tu código:
+  const numStr = num.toString();
 
+  // Invierte la cadena
+  const numStrReversed = numStr.split('').reverse().join('');
+
+  // Compara el número original con su reverso y devuelve true si son iguales, false en caso contrario
+  return numStr === numStrReversed;
 }
 
 // No modifiques nada debajo de esta linea //
-
+//
 module.exports = numeroSimetrico
